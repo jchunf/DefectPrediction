@@ -35,7 +35,7 @@ def mlp(train_data, test_data):
     x_train, y_train = train_data[:, 0:m - 1], (train_data[:, m - 1] > 0).astype(int)
     x_test, y_true = test_data[:, 0:m - 1], (test_data[:, m - 1] > 0).astype(int)
 
-    clf = MLPClassifier(random_state=5,max_iter=5000)
+    clf = MLPClassifier(random_state=0,max_iter=5000)
     TP = 0
     FN = 0
     FP = 0
